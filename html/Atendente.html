@@ -1,0 +1,64 @@
+﻿<html>
+<head>
+<link rel="stylesheet" type="text/css" href="http://localhost/css/estilos.css"/>
+
+</head>
+
+<div class="header">
+<a href="logout.php">Sair/Logout</a>
+<h1 align="center">BEM VINDO ATENDENTE!</h1>
+</div>
+
+<br>
+<br>
+<a href="http://localhost/cadastro_medico.html">Cadastrar Medico</a>
+<br>
+<br>
+<a href="http://localhost/cadastro_paciente.html">Cadastrar Paciente</a>
+
+<br>
+<br>
+
+</div>
+
+<div class="aside">
+<form method="post" action="http://localhost/atendentephp.php">
+	<h3>MARCAR CONSULTA<h3>
+	Nome do Medico: <input  type="imput-text" name="nome_medico_agenda"/><br>
+	Nome do Paciente: <input  type="imput-text" name="nome_paciente_agenda"/><br>
+	Especialidade: <input  type="imput-text" name="esp"/><br>
+	Convenio do Paciente: <input  type="imput-text" name="convenio_paciente_agenda"/><br>
+	Data da Consulta: <input id="datetime-local" type="date" name="data_consulta"/><br>
+	Horario da Consulta: <select name="horario">
+    <option value="sete">07:00</option>
+    <option value="oito">08:00</option>
+    <option value="nove">09:00</option>
+    <option value="dez">10:00</option>
+	<option value="onze">11:00</option>
+	<option value="uma">13:00</option>
+	<option value="duas">14:00</option>
+	<option value="tres">15:00</option>
+	<option value="quatro">16:00</option>
+	<option value="cinco">17:00</option>
+	<option value="seis">18:00</option>
+
+  </select> <br><br>
+	
+	<button type="submit" name="agendar">Agendar Consulta</button><br>
+
+	<br>
+	<br>
+
+	<button type="submit" name="consultar_agenda">Consultar Agenda</button><br>
+</form>
+</div>
+
+
+<div class="footer">
+<p>Hesfaller,	Rafael	 e	Luis Fernando</p>
+</div>
+<br>
+<br>
+</font>
+</body>
+</html>

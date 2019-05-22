@@ -1,0 +1,102 @@
+﻿<html>
+<head>
+<link rel="stylesheet" type="text/css" href="http://localhost/css/estilos.css"/>
+
+</head>
+<body>
+
+<div class="header">
+<a href="logout.php">Sair/Logout</a>
+<h1 align="center">BEM VINDO MEDICO!</h1>
+</div>
+
+<br>
+<br>
+
+<div class="article">
+<form method="post" action="http://localhost/medicophp.php">
+    <br>
+	<br>
+	
+	<h1><font size="6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cadastro</h1>
+	<br>
+	
+	<p6><font size="3">selecione qual campo quer alterar:</p6>
+	<select name="campo">
+    <option value="CRM">CRM</option>
+    <option value="email">Email</option>
+    <option value="esp">esp</option>
+    <option value="planosaude">Plano de Saude</option>
+	<option value="senha">Senha</option>
+
+  </select> <br><br>
+	<input type="input-text" class="input_text" name="novo" />
+	<button type="submit" name="alterar_cadastro">Alterar</button><br>
+	<br>
+	<br>
+	<button type="submit" name="consultar_agenda">Consultar Agenda</button><br>
+	<br>
+	<br>
+	<button type="submit" name="consulta_cadastro">Consultar Cadastro</button>
+</form> 
+<br>
+<br>
+
+
+
+
+</div>
+
+<div class="aside">
+
+<h1>HORARIOS</h1>
+<br>
+	<span>adicione NOVOS horarios</span><br>
+
+<form method="POST" action="http://localhost/medicophp.php">
+<input id="datetime-local" type="date" name="data"/><br>
+07:00	 <input type="checkbox" name="horarios[]" value="sete"> 
+08:00	 <input type="checkbox" name="horarios[]" value="oito">
+09:00	 <input type="checkbox" name="horarios[]" value="nove"><br>
+10:00	<input type="checkbox" name="horarios[]" value="dez">
+11:00	<input type="checkbox" name="horarios[]" value="onze">
+13:00	<input type="checkbox" name="horarios[]" value="uma"><br>
+14:00	<input type="checkbox" name="horarios[]" value="duas">
+15:00	<input type="checkbox" name="horarios[]" value="tres">
+16:00	<input type="checkbox" name="horarios[]" value="quatro"><br>
+17:00	<input type="checkbox" name="horarios[]" value="cinco">
+18:00	<input type="checkbox" name="horarios[]" value="seis"><br>
+<button type="submit" name="alterar_horario">Adicionar Horario</button><br>
+
+<br>
+<button type="submit" name="deletar_data">Deletar TODAS Datas/Horarios:</button><br>
+</div>
+
+
+<!--
+<form action="medicophp.php">
+07:00	 <input type="checkbox" name="sete">
+08:00	 <input type="checkbox" name="oito">
+09:00	 <input type="checkbox" name="nove"><br>
+10:00	<input type="checkbox" name="dez">
+11:00	<input type="checkbox" name="onze">
+13:00	<input type="checkbox" name="uma"><br>
+14:00	<input type="checkbox" name="duas">
+15:00	<input type="checkbox" name="tres">
+16:00	<input type="checkbox" name="quatro"><br>
+17:00	<input type="checkbox" name="cinco">
+18:00	<input type="checkbox" name="seis"><br>
+<button type="submit" name="alterar_horario">Adicionar Horario</button><br>
+-->
+
+
+
+
+<div class="footer">
+<p>Hesfaller,	Rafael	 e	Luis Fernando</p>
+</div>
+<br>
+<br>
+</font>
+</body>
+</html>
